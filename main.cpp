@@ -1,50 +1,3 @@
-
-# The Best WAV Player
-
-A bluetooth WAV player with ULCD integration - Georgia Tech ECE4180
-
-
-## Authors
-
-- Vincent Kosasih - [@kosasih21](https://www.github.com/kosasih21)
-- George Lee - [@glee366](https://www.github.com/glee366)
-- Alejandro Avila - [@aavila33](https://www.github.com/aavila33)
-
-
-## Demo
-View our video project demonstration [**here**](https://youtu.be/IGfztZpOnzM).
-
-Images:
-![Reference1](/imgs/IMG_3831.jpg)
-![Reference2](/imgs/IMG_3832.jpg)
-## Features
-
-- **Audio Playback:** The core functionality of our device is to play WAV audio files, which are typically slightly compressed audio files that provide high-quality sound through a standalone audio playback device.
-- **Bluetooth Connectivity:** With the BlueART Bluetooth chip, our WAV player can receive audio commands wirelessly from a Bluetooth-enabled device. This allows for easily expandable wireless controls for the player.
-- **SD Card Storage:** The SD card reader enables our device to read WAV files stored on an SD card, providing a portable, local, and expandable storage solution for audio files.
-- **Display Interface:** The uLCD (micro Liquid Crystal Display) is used as a customizable display that can show track information and other user interface elements.
-
-
-
-## Parts and Schematics
-- Mbed LPC1768, [Shop Link](https://www.sparkfun.com/products/retired/14458), [Reference Page](https://os.mbed.com/platforms/mbed-LPC1768/)
-- LCD Display uLCD-144G2, [Shop Link](https://www.sparkfun.com/products/11377), [Reference Page](https://os.mbed.com/users/4180_1/notebook/ulcd-144-g2-128-by-128-color-lcd/)
-- Adafruit Bluefruit LE UART, [Shop Link](https://www.adafruit.com/product/2479), [Reference Page](https://os.mbed.com/users/4180_1/notebook/adafruit-bluefruit-le-uart-friend---bluetooth-low-/)
-- Speaker, [Shop Link](), [Reference Page](https://os.mbed.com/users/4180_1/notebook/using-a-speaker-for-audio-output/)
-- NPN General Purpose Amplifier, [Shop Link](https://www.jameco.com/z/PN3565-Major-Brands-PN3565-NPN-General-Purpose-Amplifier-TO-92-25V-0-5A_787608.html), [Reference Page](https://os.mbed.com/users/4180_1/notebook/using-a-speaker-for-audio-output/)
-- Potentiometer, [Shop Link](https://www.sparkfun.com/products/9806), [Reference Page](https://os.mbed.com/users/jderiso2/notebook/potentiometer/)
-- External Power Supply
-- Various Wires
-
-Miscellaneous:
-- Phone for bluetooth connectivity
-- Breadboard
-
-Schematics and Wiring:  
-![Reference3](/imgs/imagee.png)
-## Source Code
-*If intended to use, please be sure to utilize the mbed-rtos library*
-```cpp
 #include "mbed.h"
 #include "rtos.h"
 #include "uLCD_4DGL.h"
@@ -359,5 +312,3 @@ for (int i = 0; i < fileCount; i++) {
     }
 }
 
-
-```
